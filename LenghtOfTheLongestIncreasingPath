@@ -1,64 +1,12 @@
 from typing import List
 
-class TreeNode:
-    def __init__(self, value):
-        self.value = value
-        self.left = None
-        self.right = None
-
-def insert(root, value):
-    if root is None:
-        return TreeNode(value)
-
-    if value < root.value:
-        root.left = insert(root.left, value)
-    else:
-        root.right = insert(root.right, value)
-
-    return root
 
 class Solution:
     def maxPathLength(self, coordinates: List[List[int]], k: int) -> int:
-        #Preprocess, remove invalid coordinates and create two distinct set
-        #The forward_set is the set of coordinates which its elements' x and y are bigger than coordinate[k](pivot)
-        #The Backward_set is the set of coordinates which its elements' x and y are smaller than coordinate[k](pivot)
-        pivot = coordinates[k]
-        forward_set = []
-        backward_set = []
-        for coordinate in coordinates:
-            if coordinate[0] > pivot[0] and coordinate[1] > pivot[1]:
-                forward_set.append(coordinate)
-            elif coordinate[0] < pivot[0] and coordinate[1] < pivot[1]:
-                backward_set.append(coordinate)
+        
+        # find an algorithm to find the longest increasing path in O(n log n) time complexity
 
-        forward_set.sort(key=lambda p: (p[0], -p[1]))
-
-        if forward_set:
-            dp = [1] * len(forward_set)
-            for i in range(len(forward_set)):
-                for j in range(i):
-                    if forward_set[i][1] > forward_set[j][1]:
-                        dp[i] = max(dp[i], dp[j] + 1)
-            max_forward_length = max(dp)
-        else:
-            max_forward_length = 0
-
-
-        backward_set.sort(key=lambda p: (p[0], -p[1]))
-
-        if backward_set:
-            dp = [1] * len(backward_set)
-            for i in range(len(backward_set)):
-                for j in range(i):
-                    if backward_set[i][1] < backward_set[j][1]:
-                        dp[i] = max(dp[i], dp[j] + 1)
-            max_backward_length = max(dp)
-        else:
-            max_backward_length = 0
-
-        result = max_forward_length + max_backward_length + 1  # +1 for the pivot itself
-
-        return result
+        return 0
 
             
         
