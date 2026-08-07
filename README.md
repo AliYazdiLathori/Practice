@@ -1,6 +1,6 @@
 # Practice
 
-This repository contains my solutions to algorithm and data structure problems from platforms such as **LeetCode**. The purpose of this repository is to strengthen my problem-solving skills, improve my understanding of algorithms, and write clean, efficient C++ code.
+This repository contains my solutions to algorithm and data structure problems from platforms such as **LeetCode**. The purpose of this repository is to strengthen my problem-solving skills, improve my understanding of algorithms, and write clean, efficient python and C++ code.
 
 ## Goals
 
@@ -47,6 +47,7 @@ Practice/
 ├── DynamicProgramming/
 ├── Greedy/
 ├── BinarySearch/
+├── ...
 └── README.md
 ```
 
