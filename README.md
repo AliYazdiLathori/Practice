@@ -58,6 +58,7 @@ Whenever possible, I aim to:
 * Write solutions with optimal time and space complexity.
 * Include comments for non-trivial algorithms.
 * Learn from multiple approaches before finalizing a solution.
+* I have used AI to write comments on my codes. You can see the prompt I used in prompt.txt.
 
 ## Acknowledgments
 

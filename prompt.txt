@@ -1,0 +1,8 @@
+Please add clear, concise comments to the selected code for my LeetCode solutions, which I’m preparing for my résumé. At the top of the file, add a brief docstring that includes:
+
+The LeetCode problem number and title
+A short explanation of the problem
+A brief explanation of the approach used
+The difficulty
+Time and space complexity, with a short note if the complexity depends on implementation details
+Add inline comments only where they clarify meaningful steps. Do not change any executable code, formatting, or behavior. If any requested detail is unclear from the code, ask me before making assumptions.
